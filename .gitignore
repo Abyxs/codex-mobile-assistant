@@ -1,0 +1,10 @@
+*
+!.gitignore
+!.gitattributes
+!README.md
+!NOTICE.md
+!LICENSE
+!docs/
+!docs/**
+!licenses/
+!licenses/**
