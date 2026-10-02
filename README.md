@@ -8,17 +8,23 @@
 
 这是一个社区制作的辅助工具，与 OpenAI 无隶属关系。任务仍由电脑上的 Codex 执行。本仓库用于发布安装包、使用说明和功能介绍，当前版本不提供程序源码。
 
+## 致敬最初的项目
+
+这个助手最初基于 [try2love/codex-mobile-bridge](https://github.com/try2love/codex-mobile-bridge) 扩展而来。感谢原作者把手机连接 Codex 桌面端的实现开源，让我们能在这个基础上继续完善 Windows 入口、手机 App 和文件操作体验。
+
+欢迎去上游项目看看，也给原作者点个 Star。我们继续保留[上游许可证](licenses/codex-mobile-bridge-LICENSE)及相关第三方声明。
+
 ## 下载最新版
 
-电脑端与手机端请配套更新：**Windows 1.6.20 / Android、iOS 1.0.16**。
+电脑端与手机端请配套更新：**Windows 1.6.21 / Android、iOS 1.0.17**。
 
 | 平台 | 版本 | 安装包 |
 | --- | --- | --- |
-| Windows 10/11 x64 | 1.6.20 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.20/CodexMobileAssistant-Windows-1.6.20.exe) |
-| Android | 1.0.16 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.20/CodexMobileAssistant-Android-1.0.16.apk) |
-| iPhone / iPad | 1.0.16 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.20/CodexMobileAssistant-iOS-1.0.16-unsigned.ipa) |
+| Windows 10/11 x64 | 1.6.21 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/CodexMobileAssistant-Windows-1.6.21.exe) |
+| Android | 1.0.17 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/CodexMobileAssistant-Android-1.0.17.apk) |
+| iPhone / iPad | 1.0.17 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/CodexMobileAssistant-iOS-1.0.17-unsigned.ipa) |
 
-[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.20) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.20/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
+[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.21) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
 
 EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA 为未签名包，需要自行签名后安装，不能在 iPhone 上下载后直接点开安装。
 
@@ -46,10 +52,12 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 
 ![对话文件定位、下载进度和保存文件的功能示意](docs/images/files-and-downloads.png)
 
+图中的“保存文件”对应 Android 操作；新版苹果端按钮为“用其他应用打开”。
+
 - 点击对话中的文件链接，打开所在文件夹并高亮该文件；长按查看完整路径，也能复制。
 - 在项目文件页浏览、预览和下载文件，也可以上传文件到电脑项目中。
 - 点击下载后显示圆环进度，下载列表中最新任务排在最上方，支持取消下载和删除记录。
-- 文件先下载到 App 内，再由你点击“保存文件”选择保存位置。
+- 文件先下载到 App 内；苹果端点击“用其他应用打开”，在系统菜单中选择其他应用或“存储到文件”。Android 继续通过“保存文件”导出。
 - 对话中的图片支持点开查看、关闭和双指缩放。
 
 ### 日常操作少折腾
@@ -65,3 +73,7 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 - 配图是自行绘制的功能示意，具体外观以实际版本为准。
 
 [常见问题](docs/faq.md) · [更新说明](docs/releases.md) · [第三方声明](NOTICE.md) · [许可证](LICENSE)
+
+## 社区推荐
+
+最后安利一下 [LINUX DO](https://linux.do/)：**Linux.do 网站好，值得逛逛！** 欢迎去交流技术、分享经验，也欢迎把好用的工具互相推荐给有需要的朋友。
