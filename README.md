@@ -16,15 +16,17 @@
 
 ## 下载最新版
 
-电脑端与手机端请配套更新：**Windows 1.6.24 / Android、iOS 1.0.20**。
+电脑端与手机端请配套更新：**Windows 1.6.27 / Android 1.0.24 / iOS 1.0.22**。本次更新 EXE 与 APK；IPA 沿用此前已构建的 1.0.22。
 
 | 平台 | 版本 | 安装包 |
 | --- | --- | --- |
-| Windows 10/11 x64 | 1.6.24 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/CodexMobileAssistant-Windows-1.6.24.exe) |
-| Android | 1.0.20 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/CodexMobileAssistant-Android-1.0.20.apk) |
-| iPhone / iPad | 1.0.20 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/CodexMobileAssistant-iOS-1.0.20-unsigned.ipa) |
+| Windows 10/11 x64 | 1.6.27 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.27/CodexMobileAssistant-Windows-1.6.27.exe) |
+| Android | 1.0.24 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.27/CodexMobileAssistant-Android-1.0.24.apk) |
+| iPhone / iPad | 1.0.22 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.27/CodexMobileAssistant-iOS-1.0.22-unsigned.ipa) |
 
-[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.24) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
+[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.27) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.27/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
+
+Android 版补齐扫码组件依赖，修复启动相机时的类缺失错误；电脑端补齐旧版 Android WebView 接口，修复已连接但对话列表无法显示的问题。请同时更新两端，再重新连接。
 
 EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA 为未签名包，需要自行签名后安装，不能在 iPhone 上下载后直接点开安装。
 
@@ -42,7 +44,7 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 
 ### 接着聊，也能新建对话
 
-查看电脑上的对话，继续发消息、发送图片和普通文件，选择模型、推理强度和技能。既能在现有项目中继续，也能新建不关联已有项目的临时对话。临时对话会保存历史。
+查看电脑上的对话，继续发消息、发送图片和普通文件，选择模型、推理强度和技能。既能在现有项目中继续，也能新建不关联已有项目的临时对话。临时对话会保存历史。用户消息显示发送时间，助手回答显示完成时间，按手机所在时区展示。
 
 ### 文件直接附在消息里
 
@@ -50,7 +52,7 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 
 ### 操作确认更清楚，权限自己选
 
-确认卡片先显示操作说明，完整命令和权限信息收进可展开的详情，支持复制。输入框下方可以选择“只读”“默认权限”或“完全访问”，只影响当前对话的下一轮；已有待确认操作仍需单独处理。“完全访问”允许访问项目外文件并自动通过后续操作审批，请根据任务需要选择。
+确认卡片先显示操作说明，完整命令和权限信息收进可展开的详情，支持复制。输入框下方的“请求批准”“帮我批准”“完全访问权限”与 Codex 原生权限对应，回读一致后才提示同步成功；只影响当前对话的下一轮，已有待确认操作仍需单独处理。
 
 ### 任务进度随时看
 
@@ -65,6 +67,7 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 - 点击对话中的文件链接，先打开所在文件夹并高亮该文件，由你点击文件旁的“下载”后才开始下载；长按查看完整路径，也能复制。
 - 在项目文件页浏览、预览和下载文件，也可以上传文件到电脑项目中。
 - 点击下载后显示圆环进度，下载列表中最新任务排在最上方，支持取消下载和删除记录。
+- 关闭下载列表继续下载；离开 App 时暂停，回来后点击“继续下载”从已保存的进度接着下载。已完成文件直接复用，避免重复下载。
 - 文件先下载到 App 内；苹果端点击“用其他应用打开”，在系统菜单中选择其他应用或“存储到文件”。Android 继续通过“保存文件”导出。
 - 下载完成后，在项目文件列表点击文件名或右侧按钮，也能直接打开系统分享菜单，无需进入下载列表或重新下载；Android 和网页使用各自的保存方式。
 - 对话中的图片支持点开查看、关闭和双指缩放。
@@ -77,8 +80,8 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 
 - 需要自己可用的 Codex 桌面版和模型服务，本应用不提供账号或模型额度。
 - 当前文件传输主要面向电脑本地项目；模型能否处理图片取决于所选模型。
-- 关闭下载列表可以继续下载。锁屏、切换到后台或系统结束 App 时，下载和通知仍受手机系统限制，尤其是 iOS。
-- 本次三个安装包已完成构建与完整性、版本核对，最新交互尚未做真机验证。
+- 下载在 App 进入后台时暂停，恢复前台后由你手动继续；后台通知仍受手机系统限制。
+- EXE、APK 已完成本次构建、版本与完整性核对；IPA 沿用已校验的 1.0.22。最新交互尚未做真机验证。
 - 配图是自行绘制的功能示意，具体外观以实际版本为准。
 
 [常见问题](docs/faq.md) · [更新说明](docs/releases.md) · [第三方声明](NOTICE.md) · [许可证](LICENSE)
