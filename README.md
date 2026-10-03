@@ -16,15 +16,15 @@
 
 ## 下载最新版
 
-电脑端与手机端请配套更新：**Windows 1.6.23 / Android、iOS 1.0.19**。
+电脑端与手机端请配套更新：**Windows 1.6.24 / Android、iOS 1.0.20**。
 
 | 平台 | 版本 | 安装包 |
 | --- | --- | --- |
-| Windows 10/11 x64 | 1.6.23 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/CodexMobileAssistant-Windows-1.6.23.exe) |
-| Android | 1.0.19 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/CodexMobileAssistant-Android-1.0.19.apk) |
-| iPhone / iPad | 1.0.19 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/CodexMobileAssistant-iOS-1.0.19-unsigned.ipa) |
+| Windows 10/11 x64 | 1.6.24 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/CodexMobileAssistant-Windows-1.6.24.exe) |
+| Android | 1.0.20 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/CodexMobileAssistant-Android-1.0.20.apk) |
+| iPhone / iPad | 1.0.20 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/CodexMobileAssistant-iOS-1.0.20-unsigned.ipa) |
 
-[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.23) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
+[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.24) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.24/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
 
 EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA 为未签名包，需要自行签名后安装，不能在 iPhone 上下载后直接点开安装。
 
@@ -42,7 +42,15 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 
 ### 接着聊，也能新建对话
 
-查看电脑上的对话，继续发消息、发送图片，选择模型、推理强度和技能。既能在现有项目中继续，也能新建不关联已有项目的临时对话。临时对话会保存历史。
+查看电脑上的对话，继续发消息、发送图片和普通文件，选择模型、推理强度和技能。既能在现有项目中继续，也能新建不关联已有项目的临时对话。临时对话会保存历史。
+
+### 文件直接附在消息里
+
+文档、表格、代码和压缩包都可以通过输入框添加，也支持粘贴和拖入。上传时显示进度，发送前可以查看文件名、大小和上传状态。每条消息最多 4 个附件（含图片），普通文件单个最大 20 MB。目前普通文件附件仅支持电脑本地对话；SSH 对话仍可发送图片。
+
+### 操作确认更清楚，权限自己选
+
+确认卡片先显示操作说明，完整命令和权限信息收进可展开的详情，支持复制。输入框下方可以选择“只读”“默认权限”或“完全访问”，只影响当前对话的下一轮；已有待确认操作仍需单独处理。“完全访问”允许访问项目外文件并自动通过后续操作审批，请根据任务需要选择。
 
 ### 任务进度随时看
 
