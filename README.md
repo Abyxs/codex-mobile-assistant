@@ -16,15 +16,15 @@
 
 ## 下载最新版
 
-电脑端与手机端请配套更新：**Windows 1.6.21 / Android、iOS 1.0.17**。
+电脑端与手机端请配套更新：**Windows 1.6.23 / Android、iOS 1.0.19**。
 
 | 平台 | 版本 | 安装包 |
 | --- | --- | --- |
-| Windows 10/11 x64 | 1.6.21 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/CodexMobileAssistant-Windows-1.6.21.exe) |
-| Android | 1.0.17 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/CodexMobileAssistant-Android-1.0.17.apk) |
-| iPhone / iPad | 1.0.17 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/CodexMobileAssistant-iOS-1.0.17-unsigned.ipa) |
+| Windows 10/11 x64 | 1.6.23 | [下载 EXE](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/CodexMobileAssistant-Windows-1.6.23.exe) |
+| Android | 1.0.19 | [下载 APK](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/CodexMobileAssistant-Android-1.0.19.apk) |
+| iPhone / iPad | 1.0.19 | [下载 IPA](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/CodexMobileAssistant-iOS-1.0.19-unsigned.ipa) |
 
-[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.21) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.21/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
+[本次发布说明](https://github.com/Abyxs/codex-mobile-assistant/releases/tag/v1.6.23) · [文件校验值](https://github.com/Abyxs/codex-mobile-assistant/releases/download/v1.6.23/SHA256SUMS.txt) · [安装与使用](docs/quick-start.md)
 
 EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA 为未签名包，需要自行签名后安装，不能在 iPhone 上下载后直接点开安装。
 
@@ -54,10 +54,11 @@ EXE 双击启动，无需另外安装 Python。APK 用于 Android 安装。IPA �
 
 图中的“保存文件”对应 Android 操作；新版苹果端按钮为“用其他应用打开”。
 
-- 点击对话中的文件链接，打开所在文件夹并高亮该文件；长按查看完整路径，也能复制。
+- 点击对话中的文件链接，先打开所在文件夹并高亮该文件，由你点击文件旁的“下载”后才开始下载；长按查看完整路径，也能复制。
 - 在项目文件页浏览、预览和下载文件，也可以上传文件到电脑项目中。
 - 点击下载后显示圆环进度，下载列表中最新任务排在最上方，支持取消下载和删除记录。
 - 文件先下载到 App 内；苹果端点击“用其他应用打开”，在系统菜单中选择其他应用或“存储到文件”。Android 继续通过“保存文件”导出。
+- 下载完成后，在项目文件列表点击文件名或右侧按钮，也能直接打开系统分享菜单，无需进入下载列表或重新下载；Android 和网页使用各自的保存方式。
 - 对话中的图片支持点开查看、关闭和双指缩放。
 
 ### 日常操作少折腾
